@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
+import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 const Navbar = () => {
     const [dropDownState, setDropDownState] = useState(false);
@@ -27,15 +28,18 @@ const Navbar = () => {
             </div>
             <ul className="hidden items-center justify-between gap-10 md:flex">
                 <li className="group flex   cursor-pointer flex-col">
-                    <span className="text-sm font-normal text-[#F3F6F5]">Home</span><span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-white transition-all duration-300 group-hover:w-full"></span>
+                    <span className="text-sm font-medium text-[#6D7372]">Home</span><span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#6D7372] transition-all duration-300 group-hover:w-full"></span>
                 </li>
             </ul>
             <div className="flex items-center space-x-4">
-                <button className="rounded-lg bg-sky-500 px-3 py-2 text-md text-white duration-300 font-bold active:scale-95">
-                    toggle
+                <button >
+                    <MdOutlineDarkMode size={20}/>
                 </button>
-                <button className="rounded-lg  bg-sky-500 px-3 py-2 text-md text-white font-bold  transition-all duration-200 hover:scale-110">
-                    Hire me
+                <button >
+                <MdOutlineLightMode size={20} />
+                </button>
+                <button className="rounded-lg   bg-[#365E53] px-3 py-2 text-md text-[#DCE3E1] font-medium text-sm ease-in-out transition-all duration-200 hover:scale-110">
+                    Contact me
                 </button>
             </div>
             <div ref={dropDownMenuRef} onClick={() => setDropDownState(!dropDownState)} className="relative flex transition-transform md:hidden">
