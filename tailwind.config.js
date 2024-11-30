@@ -5,16 +5,17 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'mobile': { min: '300px', max: '425px' }, // Define a custom range for mobile devices
+      },
+    },
     screens: {
-      'sm': '320px',
-      'md': '375px',
-      'ml': '425px',
-      'tab': '768px',
-      'lg': '1024px',
-      'xl': '1280px',
-
+      md: '768px',
+      lg: '1024px',
+      laptopL: '1440px',
+      desktop: '1880px',
     },
   },
   plugins: [],
-}
+};
