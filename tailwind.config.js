@@ -7,7 +7,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'mobile': { min: '300px', max: '425px' }, // Define a custom range for mobile devices
+        'mobile': { min: '300px', max: '600px' }, // Define a custom range for mobile devices
       },
     },
     screens: {
