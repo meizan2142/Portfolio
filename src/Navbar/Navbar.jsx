@@ -47,7 +47,7 @@ const Navbar = () => {
     </>
 
     return (
-        <nav className={`flex items-center justify-between px-4 py-2 text-white ${scrollPosition > 100 ? 'mx-auto w-[1400px] fixed z-10 border border-[#365E53] rounded-r-full rounded-l-full' : ''}`}
+        <nav className={`flex items-center justify-between px-4 py-2 text-white ${scrollPosition > 50 ? 'mx-auto mobile:w-full desktop:w-[1400px] fixed z-10 border border-[#365E53] rounded-r-full rounded-l-full' : ''}`}
         >
             <div className="scale-100 cursor-pointer rounded-2xl px-3 py-2 text-xl font-semibold text-white">
                 <h6 className="text-lg text-[#25483F]">&lt;<span className="text-[#DCE3E1]">saif<span className="text-[#25483F]">sultan</span></span>/&gt;</h6>
@@ -62,7 +62,7 @@ const Navbar = () => {
                 <button className="border p-1 rounded-full border-[#365E53]">
                     <MdOutlineLightMode size={20} color="#365E53" />
                 </button> */}
-                <button className="rounded-lg  desktop:flex mobile:hidden md:hidden bg-[#365E53] px-3 py-2 text-md text-[#DCE3E1] font-medium text-sm ease-in-out transition-all duration-200 hover:scale-110">
+                <button className="rounded-lg  desktop:flex mobile:hidden md:hidden bg-[#365E53] px-3 py-2 text-[#DCE3E1] font-medium text-sm ease-in-out transition-all duration-200 hover:scale-110">
                     Contact me
                 </button>
             </div>
