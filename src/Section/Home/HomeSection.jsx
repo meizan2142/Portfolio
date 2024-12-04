@@ -1,5 +1,6 @@
-import Hero from "../../Hero/Hero"
 import Navbar from "../../Navbar/Navbar"
+import About from "../About/About"
+import Hero from "../Hero/Hero"
 
 const HomeSection = () => {
     return (
@@ -9,6 +10,9 @@ const HomeSection = () => {
             </div>
             <div>
                 <Hero/>
+            </div>
+            <div className="mt-20">
+                <About/>
             </div>
         </div>
     )

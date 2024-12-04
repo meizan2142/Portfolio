@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
+import { NavLink } from "react-router";
 // import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 const Navbar = () => {
@@ -32,17 +33,10 @@ const Navbar = () => {
     }, []);
 
     const navLinksLg = <>
-        <li className="group flex   cursor-pointer flex-col">
-            <span className="text-sm font-medium  text-[#DCE3E1]">Home</span><span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#6D7372] transition-all duration-300 group-hover:w-full"></span>
-        </li>
-        <li className="group flex   cursor-pointer flex-col">
-            <span className="text-sm font-medium  text-[#DCE3E1]">About</span><span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#6D7372] transition-all duration-300 group-hover:w-full"></span>
-        </li>
-        <li className="group flex   cursor-pointer flex-col">
-            <span className="text-sm font-medium  text-[#DCE3E1]">Skills</span><span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#6D7372] transition-all duration-300 group-hover:w-full"></span>
-        </li>
-        <li className="group flex   cursor-pointer flex-col">
-            <span className="text-sm font-medium  text-[#DCE3E1]">Projects</span><span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#6D7372] transition-all duration-300 group-hover:w-full"></span>
+        <li>
+            <a className="group flex   cursor-pointer flex-col" href="/#home">
+            <span className={({isActive}) => isActive ? 'text-sm font-bold text-red-500' : "text-sm font-medium  text-green-500"}>Home</span><span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#6D7372] transition-all duration-300 group-hover:w-full"></span>
+            </a>
         </li>
     </>
 

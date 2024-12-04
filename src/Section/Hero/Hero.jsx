@@ -3,9 +3,9 @@ import { MdOutlineEventNote } from "react-icons/md"
 
 const Hero = () => {
     return (
-        <div className="desktop:flex desktop:justify-between desktop:items-center laptopL::flex laptopL:justify-between laptopL:items-center lg:flex lg:justify-between lg:items-center mobile:grid">
+        <div  className="desktop:flex desktop:justify-between desktop:items-center laptopL::flex laptopL:justify-between laptopL:items-center lg:flex lg:justify-between lg:items-center mobile:grid">
             {/* left text */}
-            <div className=" px-9">
+            <div id="home" className=" px-9">
                 <div className="mt-2">
                     <button className="border border-[#365E53] rounded-r-full rounded-l-full px-4 text-[#365E53] font-medium py-2 text-xs">&lt; <span className="text-[#365E53]">Available for hire</span> /&gt;</button>
                 </div>
@@ -59,7 +59,7 @@ const Hero = () => {
                 </div>
             </div>
             {/* side text */}
-            <div className="px-8">
+            <div className="px-8 md:flex md:gap-5 desktop:grid">
                 <div className="flex gap-3 border border-[#365E53] rounded-md items-center w-60 mt-6 h-20 px-8">
                     <p className="text-base font-medium text-[#3F7D6E]"><span>&lt;</span><span>/</span><span>&gt;</span></p>
                     <h1 className="text-[#3F7D6E] font-medium text-base">Junior MERN Stack Developer</h1>
