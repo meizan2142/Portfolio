@@ -23,10 +23,10 @@ const Hero = () => {
                     </div>
                     <h1 className="text-[#3F7D6E] font-medium text-xl w-full">MERN Stack Developer</h1>
                 </div>
-                <p className="text-base font-medium text-[#DCE3E1] mt-8 w-3/4 leading-relaxed">
+                <p className="text-base font-medium text-[#DCE3E1] mt-8 desktop:w-3/4 leading-relaxed">
                     Junior MERN Stack developer with a passion for crafting great user experiences. From responsive interfaces to full-stack applications, I build solutions that are both engaging and reliable. Discover my portfolio and explore my work.
                 </p>
-                <div className="mt-8 space-x-3">
+                <div className="mt-8 space-x-3 space-y-3">
                     <button className="border border-[#365E53] rounded-md px-8 py-3 duration-200 hover:bg-[#3F7D6E] text-[#DCE3E1] font-medium text-sm">
                         <p className="flex items-center gap-2">
                             View Projects
@@ -34,13 +34,15 @@ const Hero = () => {
                         </p>
                     </button>
                     <button className="border border-[#3F7D6E] rounded-md px-8 py-3 duration-200 hover:bg-[#365E53] text-[#DCE3E1] font-medium text-sm">
-                        <p className="flex items-center gap-2">
+                        <a href="https://docs.google.com/document/d/1V1RPPtMOwQiu-GzEtZcm4ZFdg4VJKR7au24rSUw2T-I/edit?usp=sharing" 
+                        target="blank"
+                        className="flex items-center gap-2">
                             <MdOutlineEventNote />
                             Resume
-                        </p>
+                        </a>
                     </button>
                 </div>
-                <div className="border border-[#365E53] rounded-md w-40 mt-8 h-20  p-3 space-y-3">
+                <div className="border border-[#365E53] rounded-md w-40 mt-8 h-20 p-3 space-y-3">
                     <div className="flex justify-around py-3 items-center gap-3">
                         <button>
                             <a href="https://github.com/meizan2142" target="blank">
@@ -58,17 +60,14 @@ const Hero = () => {
             </div>
             {/* side text */}
             <div className="px-8">
-                <div className="w-60 mt-6 h-24  py-7 px-3 space-y-3">
-                    <h1 className="text-[#3F7D6E] font-medium text-xl w-full">MERN Stack Developer</h1>
-                </div>  
-                <div className="border border-[#365E53] rounded-md w-60 mt-6 h-24  p-3 space-y-3">
-                    <div className="flex items-center gap-3">
-                        <div className="h-2 w-2 rounded-full bg-red-500/50" />
-                        <div className="h-2 w-2 rounded-full bg-yellow-500/50" />
-                        <div className="h-2 w-2 rounded-full bg-green-500/50" />
-                        <span className="text-[#365E53]">current_role.jsx</span>
-                    </div>
-                    <h1 className="text-[#3F7D6E] font-medium text-xl w-full">MERN Stack Developer</h1>
+                <div className="flex gap-3 border border-[#365E53] rounded-md items-center w-60 mt-6 h-20 px-8">
+                    <p className="text-base font-medium text-[#3F7D6E]"><span>&lt;</span><span>/</span><span>&gt;</span></p>
+                    <h1 className="text-[#3F7D6E] font-medium text-base">Junior MERN Stack Developer</h1>
+                </div>
+                {/* border border-[#365E53] rounded-md */}
+                <div className="flex gap-3 border border-[#365E53] rounded-md items-center w-60 mt-6 h-20 px-8">
+                    <p className="text-base font-medium text-[#3F7D6E]"><span>&lt;</span><span>/</span><span>&gt;</span></p>
+                    <h1 className="text-[#3F7D6E] font-medium text-base">Junior Frontend Developer</h1>
                 </div>
             </div>
         </div>
