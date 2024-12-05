@@ -1,35 +1,14 @@
+import RoundaboutRightRoundedIcon from '@mui/icons-material/RoundaboutRightRounded';
 const Skills = () => {
     return (
-        <div id="skills">Skills
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde aut aliquid velit vitae ea, nisi omnis cumque, rerum laudantium cum tenetur dicta sit. Voluptatum repellendus illo iure ipsa ea perferendis.
-                Ipsum animi sapiente odio sunt eaque ratione hic unde iusto aliquam reiciendis ducimus veniam accusamus eos asperiores, magni ipsa, cum et voluptatem? Pariatur dolor quia omnis quod. Fugiat, veniam ullam?
-                Qui laudantium voluptate quo ad molestias impedit omnis incidunt aliquid natus perspiciatis corporis sint, similique maxime et veniam est nobis facere modi ipsam ab iure vero ullam fugit enim? Cumque.
-                Distinctio debitis expedita consectetur tempora neque eligendi, reiciendis doloribus quia quo sit voluptatum nobis ex harum modi quis, perspiciatis aut reprehenderit? Aspernatur inventore veritatis, fugiat numquam ad corrupti vero ab?
-                Nemo minus fugiat placeat numquam consectetur officia possimus. Dolorem nihil accusantium aspernatur modi quibusdam? Illo quas unde maiores laborum vero obcaecati, soluta non a dolor tenetur ab laudantium rerum praesentium!
-                Veniam nemo sed excepturi cupiditate doloribus vero ipsa impedit. Unde perferendis cupiditate animi ut minus voluptatem recusandae, commodi repellendus deserunt quas ipsum debitis iure ipsa dolor corrupti illum esse velit?
-                Placeat magnam nam asperiores ratione commodi voluptas veritatis aliquid et provident voluptatem quaerat animi, delectus vero culpa consectetur, sunt magni distinctio quas facilis in! Autem fugiat quisquam corrupti odit blanditiis.
-                Quia quaerat maiores obcaecati ducimus totam delectus distinctio quae velit aliquid quis! Sint non accusamus nihil, eos voluptate ratione autem facilis recusandae earum ea in amet soluta fugit nostrum temporibus?
-                Facere veritatis consequatur in autem quas nesciunt aliquam dignissimos praesentium, quam deserunt velit expedita veniam cumque tenetur corporis eligendi magnam minima quisquam doloremque molestias animi reiciendis! Similique dolore delectus error.
-                Harum sapiente mollitia nisi, exercitationem iste alias ea quibusdam facilis adipisci ex provident error incidunt aperiam aspernatur veritatis optio, architecto voluptatibus repellat accusantium doloremque voluptatum laboriosam natus. Sed, natus expedita?
-                Sint amet hic recusandae, saepe soluta aliquid labore deleniti voluptatibus libero magnam, unde qui repellat autem? Incidunt, maiores mollitia voluptatum asperiores recusandae, quos ullam officia, nihil quis voluptas unde possimus.
-                Ducimus, sit! Voluptate nesciunt totam eaque velit consequuntur dolores porro, error necessitatibus aliquam qui vitae, rem quasi, iusto fuga tempora earum minus? Alias illo consequatur dolorum? Modi aperiam nesciunt aliquid.
-                Molestias laudantium neque nam dicta et tempore odio impedit perferendis iste sequi quia architecto, amet doloremque illo aperiam. Magni reiciendis laborum in magnam deserunt sit odit aliquam nisi! Enim, laboriosam.
-                Dolores quae unde aperiam atque error, similique sed eum quibusdam odit, quasi labore nesciunt. Nihil accusantium vero fugit, aspernatur quo consectetur nulla earum quas! Praesentium vitae voluptate excepturi magni iste!
-                Eveniet iure doloribus voluptatibus! Laborum facilis sint deserunt odio hic voluptate maiores ducimus quaerat, excepturi quo repudiandae vitae, debitis aut eveniet sunt blanditiis magni perspiciatis ipsum delectus provident, sed esse.
-                Fuga ullam delectus nobis atque reiciendis officia dolorem non commodi eius dolore autem architecto cum, rerum cumque iure ab voluptate possimus. Necessitatibus ea culpa cum ipsam consectetur vitae consequatur dolores!
-                Illum repellendus enim quod tempora veniam! Dolor consectetur quos quia hic, quas deleniti maiores atque repudiandae facilis nihil ab quam earum dolorem, mollitia illo consequuntur ipsa incidunt non accusantium impedit.
-                Sequi accusantium, minus voluptatibus incidunt culpa accusamus, ducimus modi quae tempore tempora dolores sit distinctio. Qui alias culpa eveniet ea! Nemo et, accusantium debitis dolores natus eos fugit illo eveniet.
-                Aspernatur ipsam pariatur cumque quae laudantium velit dolorum temporibus quisquam aut at natus autem officiis amet aperiam corporis, nihil veniam magnam esse fugit beatae sit qui? Impedit dolores libero necessitatibus.
-                Inventore veritatis quam dolorem molestiae autem numquam alias iste aperiam possimus non minus consequatur pariatur fugiat deserunt, sit tempora id, provident ducimus totam odit? Officiis fuga iusto consequatur id ratione.
-                Consectetur nemo adipisci porro necessitatibus. Quasi, assumenda qui nesciunt eum dolores harum magnam dolorem saepe, perspiciatis nostrum officiis fugiat eligendi vero, eveniet esse adipisci enim architecto voluptatum dolor error neque!
-                Optio quibusdam necessitatibus, cupiditate dicta, deleniti expedita quaerat cumque est nesciunt laudantium nihil earum ratione nulla facilis, libero atque quae numquam natus dignissimos temporibus facere sunt. Minima non tempora distinctio?
-                Veniam, non odio rerum voluptatum itaque maxime voluptatem placeat doloremque corporis laboriosam beatae aspernatur ducimus odit minima, amet deleniti. Ex, accusamus dignissimos. Assumenda earum culpa mollitia soluta fugiat facilis asperiores.
-                Ex, laborum deleniti, neque voluptates exercitationem sit tenetur aspernatur explicabo ea quam id nisi nam sequi cupiditate architecto veritatis officiis quae harum sunt? Corrupti, voluptatum nemo esse voluptate laborum error.
-                Omnis, error illum nostrum vitae vel autem magnam beatae molestiae, itaque molestias nam hic rerum necessitatibus laudantium non fuga dolor perferendis praesentium. Reprehenderit ipsam accusantium minus quidem repudiandae nulla nesciunt.
-                Doloribus praesentium dolorum necessitatibus esse exercitationem voluptatem suscipit facilis, dolore quas dolor perferendis nulla voluptate maiores neque inventore quae eveniet veniam atque provident sapiente expedita molestias, ipsam quibusdam quo? Cupiditate!
-                Reiciendis asperiores tenetur ea ipsam repudiandae, voluptatum laboriosam a obcaecati eligendi ipsa impedit sequi! Itaque enim voluptatibus quibusdam fugit tempore pariatur dolores obcaecati doloribus doloremque nam, debitis ad ratione at?
-                Quibusdam delectus placeat quidem autem sequi aliquid fugit necessitatibus nobis excepturi dignissimos, consequuntur ex id nostrum tenetur veniam exercitationem distinctio eum voluptate. Ad similique recusandae laboriosam at accusantium praesentium fugiat?
-                Eaque voluptate debitis, in perspiciatis ex maiores illum repellat. Consectetur laborum, totam amet labore corrupti soluta ex eius nobis sequi cumque nostrum in facilis doloremque officia nisi mollitia aliquam obcaecati!</p>
+        <div id="skills">
+            <h1 className="text-[#DCE3E1] text-2xl font-medium flex items-center gap-3">
+                <span className='text-[#3F7D6E]'><RoundaboutRightRoundedIcon /></span>
+                Skills
+                <span className="rounded-full border border-[#365E53] py-1 px-2 text-sm text-[#3F7D6E]">main</span>
+                <span className='text-[#3F7D6E] text-sm'>/</span>
+                <span className="rounded-full border border-[#365E53] py-1 px-2 text-sm text-[#3F7D6E]">tech stack</span>
+            </h1>
         </div>
     )
 }
