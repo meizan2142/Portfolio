@@ -65,8 +65,8 @@ const Navbar = () => {
             <ul className="mobile:hidden desktop:flex lg:flex laptopL:flex items-center justify-between gap-10 md:flex">
                 {navLinksLg.map(navLink => (
                     <li key={navLink.id}>
-                        <a href={navLink.path}  className="group flex  cursor-pointer flex-col font-normal text-sm">
-                            {navLink.pathName}<span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#DCE3E1] transition-all duration-300 group-hover:w-full"></span>
+                        <a href={navLink.path}  className="group flex text-[#f3f6f5b3] cursor-pointer flex-col font-normal text-sm">
+                            {navLink.pathName}<span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#f3f6f5b3] transition-all duration-300 group-hover:w-full"></span>
                         </a>
                     </li>
                 ))}
