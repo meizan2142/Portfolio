@@ -3,7 +3,7 @@ import { MdOutlineEventNote } from "react-icons/md"
 
 const Hero = () => {
     return (
-        <div  className="desktop:flex desktop:justify-between desktop:items-center laptopL::flex laptopL:justify-between laptopL:items-center lg:flex lg:justify-between lg:items-center mobile:grid">
+        <div className="desktop:flex desktop:justify-between desktop:items-center laptopL::flex laptopL:justify-between laptopL:items-center lg:flex lg:justify-between lg:items-center mobile:grid">
             {/* left text */}
             <div id="home" className=" px-9">
                 <div className="mt-2">
@@ -23,14 +23,14 @@ const Hero = () => {
                     </div>
                     <h1 className="text-[#3F7D6E] font-medium text-xl w-full">MERN Stack Developer</h1>
                 </div>
-                <p className="text-base font-medium text-[#DCE3E1] mt-8 desktop:w-3/4 leading-relaxed">
+                <p className="text-base font-normal text-[#DCE3E1] mt-8 desktop:w-3/4 leading-relaxed">
                     Junior MERN Stack developer with a passion for crafting great user experiences. From responsive interfaces to full-stack applications, I build solutions that are both engaging and reliable. Discover my portfolio and explore my work.
                 </p>
                 <div className="mt-8 space-x-3 space-y-3">
                     <button className="border border-[#365E53] rounded-md px-8 py-3 duration-200 hover:bg-[#3F7D6E] text-[#DCE3E1] font-medium text-sm">
                         <p className="flex items-center gap-2">
                             View Projects
-                            <FaArrowDownLong />
+                            <FaArrowDownLong /> 
                         </p>
                     </button>
                     <button className="border border-[#3F7D6E] rounded-md px-8 py-3 duration-200 hover:bg-[#365E53] text-[#DCE3E1] font-medium text-sm">

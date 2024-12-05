@@ -1,13 +1,36 @@
 import { useEffect } from "react";
 import { useRef } from "react";
 import { useState } from "react";
-import { NavLink } from "react-router";
+// import { Link } from "react-router";
+
 // import { MdOutlineDarkMode, MdOutlineLightMode } from "react-icons/md";
 
 const Navbar = () => {
     const [dropDownState, setDropDownState] = useState(false);
     const dropDownMenuRef = useRef();
     const [scrollPosition, setScrollPosition] = useState(0);
+    const navLinksLg = [
+        {
+            id: '1',
+            path: '/#home',
+            pathName: 'Home'
+        },
+        {
+            id: '2',
+            path: '/#about',
+            pathName: 'About'
+        },
+        {
+            id: '3',
+            path: '/#skills',
+            pathName: 'Skills'
+        },
+        {
+            id: '4',
+            path: '/#projects',
+            pathName: 'Projects'
+        },
+    ]
     const handleScroll = () => {
         const position = window.scrollY;
         setScrollPosition(position);
@@ -32,13 +55,6 @@ const Navbar = () => {
         };
     }, []);
 
-    const navLinksLg = <>
-        <li>
-            <a className="group flex   cursor-pointer flex-col" href="/#home">
-            <span className={({isActive}) => isActive ? 'text-sm font-bold text-red-500' : "text-sm font-medium  text-green-500"}>Home</span><span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#6D7372] transition-all duration-300 group-hover:w-full"></span>
-            </a>
-        </li>
-    </>
 
     return (
         <nav className={`flex items-center justify-between px-4 py-2 text-white ${scrollPosition > 50 ? 'mx-auto bg-[#0E1714] mt-4 mobile:w-full desktop:w-[1400px] md:w-full fixed z-10 border border-[#365E53] rounded-r-full rounded-l-full' : ''}`}
@@ -47,7 +63,13 @@ const Navbar = () => {
                 <h6 className="text-lg text-[#25483F]">&lt;<span className="text-[#DCE3E1]">saif<span className="text-[#25483F]">sultan</span></span>/&gt;</h6>
             </div>
             <ul className="mobile:hidden desktop:flex lg:flex laptopL:flex items-center justify-between gap-10 md:flex">
-                {navLinksLg}
+                {navLinksLg.map(navLink => (
+                    <li key={navLink.id}>
+                        <a href={navLink.path}  className="group flex  cursor-pointer flex-col font-normal text-sm">
+                            {navLink.pathName}<span className="mt-[2px] h-[3px] w-[0px] rounded-full bg-[#DCE3E1] transition-all duration-300 group-hover:w-full"></span>
+                        </a>
+                    </li>
+                ))}
             </ul>
             <div className="flex items-center space-x-4">
                 {/* <button className="border p-1 rounded-full border-[#365E53]">
