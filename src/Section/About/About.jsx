@@ -1,5 +1,7 @@
 import RoundaboutRightRoundedIcon from '@mui/icons-material/RoundaboutRightRounded';
 import { FaArrowRightLong } from 'react-icons/fa6';
+import { IoTrophyOutline } from 'react-icons/io5';
+import { MdLiveTv } from 'react-icons/md';
 const About = () => {
 
     return (
@@ -42,21 +44,33 @@ const About = () => {
                     <div className='desktop:flex mobile:grid md:grid gap-4'>
                         <div className="border border-[#365E53] rounded-md desktop:w-80 mt-6 desktop:h-44  p-3 space-y-3">
                             <div className="flex items-center gap-3">
-                                <div className="h-2 w-2 rounded-full bg-red-500/50" />
-                                <div className="h-2 w-2 rounded-full bg-yellow-500/50" />
-                                <div className="h-2 w-2 rounded-full bg-green-500/50" />
-                                <span className="text-[#365E53]">current_role.jsx</span>
+                                <MdLiveTv color='#3F7D6E' />
+                                <span className="text-[#3F7D6E] text-sm font-bold">Beyond Coding</span>
                             </div>
-                            <h1 className="text-[#3F7D6E] font-medium text-xl w-full">MERN Stack Developer</h1>
+                            <div className='flex gap-8 px-1'>
+                                <div className="h-28 border-l border-[#365E53]"></div>
+                                <div className='font-normal text-sm text-[#f3f6f5cc] space-y-2'>
+                                    <p>Playing & Watching Fotball</p>
+                                    <p>Reading Tech Blogs and Youtube</p>
+                                    <p>Watching Movies & TV Shows</p>
+                                    <p>Learning New Technologies</p>
+                                </div>
+                            </div>
                         </div>
                         <div className="border border-[#365E53] rounded-md desktop:w-80 mt-6 desktop:h-44  p-3 space-y-3">
                             <div className="flex items-center gap-3">
-                                <div className="h-2 w-2 rounded-full bg-red-500/50" />
-                                <div className="h-2 w-2 rounded-full bg-yellow-500/50" />
-                                <div className="h-2 w-2 rounded-full bg-green-500/50" />
-                                <span className="text-[#365E53]">current_role.jsx</span>
+                                <IoTrophyOutline color='#3F7D6E' />
+                                <span className="text-[#3F7D6E] text-sm font-bold">What Drives Me</span>
                             </div>
-                            <h1 className="text-[#3F7D6E] font-medium text-xl w-full">MERN Stack Developer</h1>
+                            <div className='flex gap-8 px-1'>
+                                <div className="h-28 border-l border-[#365E53]"></div>
+                                <div className='font-normal text-sm text-[#f3f6f5cc] space-y-2'>
+                                    <p>Building intuitive user experiences</p>
+                                    <p>Solving complex problems</p>
+                                    <p>Striving to be at the top</p>
+                                    <p>Continuous learning</p>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
