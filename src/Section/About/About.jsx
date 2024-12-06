@@ -23,7 +23,7 @@ const About = () => {
                             <span className='text-[#365E53]'>&gt;_</span>
                             <span className='text-[#365E53]'>whoami</span>
                             <span className='text-[#365E53]'>/</span>
-                            <span className='text-[#365E53]'>info</span>
+                            <span className='text-[#3F7D6E]'>info</span>
                             <span className='text-[#365E53]'><FaArrowRightLong size={16}/></span>
                             <span className='text-[#f3f6f5b3]'>MERN Stack developer brings ideas to life</span>
                         </h1>
