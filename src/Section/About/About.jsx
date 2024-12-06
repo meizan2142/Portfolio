@@ -17,7 +17,7 @@ const About = () => {
                     {/* <p className='text-black'>saif</p> */}
                     <img width={450} height={450} className=" scale-105 transform rounded-lg bg-black/70" src="https://i.ibb.co.com/Lg6N9Q2/Whats-App-Image-2024-11-27-at-19-43-39-408c1258.jpg" alt="card navigate ui" />
                 </div>
-                <div>
+                <div className='space-y-10'>
                     <div className="border border-[#365E53] rounded-md w-[450px] mt-6 h-12  p-3 space-y-3">
                         <h1 className="flex items-center gap-2 text-sm font-normal">
                             <span className='text-[#365E53]'>&gt;_</span>
@@ -28,14 +28,16 @@ const About = () => {
                             <span className='text-[#f3f6f5b3]'>MERN Stack developer brings ideas to life</span>
                         </h1>
                     </div>
-                    <div>
-                        <p className='w-'>
-                            Hello, I&apos;m Hassan, though many know me as Nabeel. I love creating websites and applications that not only look great but also work smoothly. What started as just being curious about how websites work has grown into something I&apos;m truly passionate about.
-
-                            When I&apos;m working on projects, I always aim for clean and efficient solutions. I enjoy the challenge of turning complex problems into simple, user-friendly experiences. Every project is a chance to learn something new and create something meaningful.
-
-                            Beyond coding, I&apos;m always exploring new technologies and keeping up with the latest in web development & tech in general. I believe that staying curious and continuously learning is what makes a great developer and engineer. This mindset helps me bring fresh ideas and better solutions to every project I work on.
-                        </p>
+                    <div className='space-y-3 w-[500px]'>
+                            <p>
+                                Hello, I&apos;m Hassan, though many know me as Nabeel. I love creating websites and applications that not only look great but also work smoothly. What started as just being curious about how websites work has grown into something I&apos;m truly passionate about.
+                            </p>
+                            <p>
+                                When I&apos;m working on projects, I always aim for clean and efficient solutions. I enjoy the challenge of turning complex problems into simple, user-friendly experiences. Every project is a chance to learn something new and create something meaningful.
+                            </p>
+                            <p>
+                                Beyond coding, I&apos;m always exploring new technologies and keeping up with the latest in web development & tech in general. I believe that staying curious and continuously learning is what makes a great developer and engineer. This mindset helps me bring fresh ideas and better solutions to every project I work on.
+                            </p>
                     </div>
                     <div className='flex gap-4'>
                         <div className="group relative max-w-[350px] overflow-hidden bg-gradient-to-r from-[#3b99f1] via-[#4FB5FF] to-[#4FB5FF] px-6 py-6 text-white shadow">
