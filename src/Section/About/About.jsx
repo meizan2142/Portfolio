@@ -14,12 +14,12 @@ const About = () => {
                 <span className="rounded-full border border-[#365E53] py-1 px-2 text-sm text-[#3F7D6E]">hello</span>
             </h1>
             {/* <div className="desktop:flex mobile:grid md:grid lg:flex lg:items-center lg:justify-between laptopL:items-center laptopL:justify-between  mt-10"> */}
-            <div className="desktop:flex mobile:grid lg:flex laptopL:flex gap-10 mt-16">
-                <div className="group relative sm:w-[350px]">
+            <div className="desktop:flex mobile:grid lg:grid laptopL:flex gap-10 mt-16">
+                <div className="group relative md:mx-32 desktop:mx-0 laptopL:mx-0 lg:mx-56 sm:w-[350px]">
                     <img width={450} height={450} className=" scale-105 transform rounded-lg bg-black/70" src="https://i.ibb.co.com/Lg6N9Q2/Whats-App-Image-2024-11-27-at-19-43-39-408c1258.jpg" alt="card navigate ui" />
                 </div>
                 <div className='space-y-10'>
-                    <div className="border border-[#365E53] rounded-md desktop:w-[450px] laptopL:w-[450px]  lg:w-[450px] mt-10 desktop:h-12 mobile:h-32 h-20  p-3 space-y-3">
+                    <div className="border border-[#365E53] rounded-md desktop:w-[450px] laptopL:w-[450px] lg:mx-56 desktop:mx-0 md:mx-32 laptopL:mx-0 lg:w-[450px] mt-10 desktop:h-12 mobile:h-32 h-20  p-3 space-y-3">
                         <h1 className="flex items-center gap-2 text-sm font-normal">
                             <span className='text-[#365E53]'>&gt;_</span>
                             <span className='text-[#365E53]'>whoami</span>
@@ -29,7 +29,7 @@ const About = () => {
                             <span className='text-[#f3f6f5b3]'>MERN Stack developer brings ideas to life</span>
                         </h1>
                     </div>
-                    <div className='space-y-2 desktop:w-[700px] lg: text-[#f3f6f5cc] font-normal text-base'>
+                    <div className='space-y-2 desktop:w-[700px] laptopL:w-[700px] text-[#f3f6f5cc] font-normal text-base'>
                         <p>
                             Hello, I&apos;m Saif. I love creating websites and applications that not only look great but also work smoothly. What started as just being curious about how websites work has grown into something I&apos;m truly passionate about.
                         </p>
