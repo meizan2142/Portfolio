@@ -1,5 +1,10 @@
 import RoundaboutRightRoundedIcon from '@mui/icons-material/RoundaboutRightRounded';
-import { FaArrowRightLong, FaHtml5 } from 'react-icons/fa6';
+import { BiLogoNetlify } from 'react-icons/bi';
+import { DiMongodb } from 'react-icons/di';
+import { FaArrowRightLong, FaHtml5, FaNodeJs } from 'react-icons/fa6';
+import { IoLogoCss3, IoLogoFirebase, IoLogoJavascript, IoLogoVercel } from 'react-icons/io5';
+import { RiReactjsLine, RiTailwindCssFill } from 'react-icons/ri';
+import { SiExpress } from 'react-icons/si';
 const Skills = () => {
     return (
         <div id="skills" className="px-9">
@@ -20,9 +25,15 @@ const Skills = () => {
                     <span className='text-[#f3f6f5b3]'>Some few technologies and tools I work with to bring ideas to life</span>
                 </h1>
             </div>
-            <div className='mt-10 desktop:flex gap-6 md:grid laptopL:flex lg:flex '>
-                <div className="desktop:w-[350px] rounded-2xl bg-white shadow-lg dark:bg-[#18181B] md:p-8">
-                    <p>Front-End Tools</p>
+            <div className='mt-10 desktop:flex gap-6 md:grid laptopL:flex lg:flex desktop:mx-20 mobile:mx-0 laptopL:mx-0 md:mx-0'>
+                {/* skills div */}
+                <div className="desktop:w-[350px] rounded-2xl border border-[#365E53] bg-[#0F1915] md:p-8">
+                <span className="rounded-full border border-[#365E53] py-1 px-2 text-sm text-[#3F7D6E]">
+                    <span>&lt;</span>
+                    <span>/</span>
+                    <span>&gt;</span>
+                    <span> Frontend Tools</span>
+                    </span>
                     <div className=' px-3 grid grid-cols-2'>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
@@ -32,150 +43,82 @@ const Skills = () => {
                         </div>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <IoLogoCss3 size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">CSS</h1>
                             </div>
                         </div>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <IoLogoJavascript size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">JavaScript</h1>
                             </div>
                         </div>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <RiTailwindCssFill size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">Tailwind CSS</h1>
                             </div>
                         </div>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <RiReactjsLine size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">React.js</h1>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="desktop:w-[350px] rounded-2xl bg-white shadow-lg dark:bg-[#18181B] md:p-8">
-                    <p>Front-End Tools</p>
+                <div className="desktop:w-[350px] rounded-2xl border border-[#365E53] bg-[#0F1915] md:p-8">
+                <span className="rounded-full border border-[#365E53] py-1 px-2 text-sm text-[#3F7D6E]">
+                    <span>&lt;</span>
+                    <span>/</span>
+                    <span>&gt;</span>
+                    <span> Development Tools</span>
+                    </span>
                     <div className=' px-3 grid grid-cols-2'>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <IoLogoVercel size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">Vercel</h1>
                             </div>
                         </div>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <IoLogoFirebase size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">Firebase</h1>
                             </div>
                         </div>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <BiLogoNetlify size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">Netlify</h1>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div className="desktop:w-[350px] rounded-2xl bg-white shadow-lg dark:bg-[#18181B] md:p-8">
-                    <p>Front-End Tools</p>
+                <div className="desktop:w-[350px] rounded-2xl border border-[#365E53] bg-[#0F1915] md:p-8">
+                <span className="rounded-full border border-[#365E53] py-1 px-2 text-sm text-[#3F7D6E]">
+                    <span>&lt;</span>
+                    <span>/</span>
+                    <span>&gt;</span>
+                    <span> Backend & Database</span>
+                    </span>
                     <div className=' px-3 grid grid-cols-2'>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <DiMongodb size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">MongoDB</h1>
                             </div>
                         </div>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <SiExpress size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">Express.js</h1>
                             </div>
                         </div>
                         <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
                             <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
-                            </div>
-                        </div>
-                        <div className="border border-[#365E53] bg-[#0E1715] rounded-md w-28 mt-6 h-18  p-3 space-y-3">
-                            <div className="flex flex-col items-center gap-3">
-                                <FaHtml5 size={20} color='#3F7D6E' />
-                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">HTML</h1>
+                                <FaNodeJs size={20} color='#3F7D6E' />
+                                <h1 className="text-[#f3f6f5b3] hover:text-[#e7eeedda] font-medium text-xs">Node.js</h1>
                             </div>
                         </div>
                     </div>
