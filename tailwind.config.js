@@ -14,7 +14,7 @@ export default {
       md: '768px',
       lg: '1024px',
       laptopL: '1440px',
-      desktop: '1880px',
+      desktop: '1875px',
     },
   },
   plugins: [],
