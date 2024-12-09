@@ -9,9 +9,9 @@ const About = () => {
             <h1 className="text-[#DCE3E1] text-2xl font-medium flex items-center gap-3">
                 <span className='text-[#3F7D6E]'><RoundaboutRightRoundedIcon /></span>
                 About Me
-                <span className="rounded-full border border-[#365E53] py-1 px-2 text-sm text-[#3F7D6E]">main</span>
+                <span className="rounded-full border border-[#272E2C] py-1 px-2 text-sm text-[#3F7D6E]">main</span>
                 <span className='text-[#3F7D6E] text-sm'>/</span>
-                <span className="rounded-full border border-[#365E53] py-1 px-2 text-sm text-[#3F7D6E]">hello</span>
+                <span className="rounded-full border border-[#272E2C] py-1 px-2 text-sm text-[#3F7D6E]">hello</span>
             </h1>
             {/* <div className="desktop:flex mobile:grid md:grid lg:flex lg:items-center lg:justify-between laptopL:items-center laptopL:justify-between  mt-10"> */}
             <div className="desktop:flex mobile:grid lg:grid laptopL:flex gap-10 mt-16">
@@ -19,7 +19,7 @@ const About = () => {
                     <img width={450} height={450} className=" scale-105 transform rounded-lg bg-black/70" src="https://i.ibb.co.com/Lg6N9Q2/Whats-App-Image-2024-11-27-at-19-43-39-408c1258.jpg" alt="card navigate ui" />
                 </div>
                 <div className='space-y-10'>
-                    <div className="border border-[#365E53] rounded-md desktop:w-[450px] laptopL:w-[450px] lg:mx-56 desktop:mx-0 md:mx-32 laptopL:mx-0 lg:w-[450px] mt-10 desktop:h-12 mobile:h-32 h-20  p-3 space-y-3">
+                    <div className="border border-[#272E2C] rounded-md desktop:w-[450px] laptopL:w-[450px] lg:mx-56 desktop:mx-0 md:mx-32 laptopL:mx-0 lg:w-[450px] mt-10 desktop:h-12 mobile:h-32 h-20  p-3 space-y-3">
                         <h1 className="flex items-center gap-2 text-sm font-normal">
                             <span className='text-[#365E53]'>&gt;_</span>
                             <span className='text-[#365E53]'>whoami</span>
@@ -41,13 +41,13 @@ const About = () => {
                         </p>
                     </div>
                     <div className='desktop:flex md:grid-cols-2 lg:grid-cols-2  grid gap-4'>
-                        <div className="border border-[#365E53] rounded-md desktop:w-80 mt-6 desktop:h-44  p-3 space-y-3">
+                        <div className="border border-[#272E2C] rounded-md desktop:w-80 mt-6 desktop:h-44  p-3 space-y-3">
                             <div className="flex items-center gap-3">
                                 <MdLiveTv color='#3F7D6E' />
                                 <span className="text-[#3F7D6E] text-sm font-bold">Beyond Coding</span>
                             </div>
                             <div className='flex gap-8 px-1'>
-                                <div className="h-28 border-l border-[#365E53]"></div>
+                                <div className="h-28 border-l border-[#272E2C]"></div>
                                 <div className='font-normal text-sm text-[#f3f6f5cc] space-y-2'>
                                     <p>Playing & Watching Fotball</p>
                                     <p>Reading Tech Blogs and Youtube</p>
@@ -56,13 +56,13 @@ const About = () => {
                                 </div>
                             </div>
                         </div>
-                        <div className="border border-[#365E53] rounded-md desktop:w-80 mt-6 desktop:h-44  p-3 space-y-3">
+                        <div className="border border-[#272E2C] rounded-md desktop:w-80 mt-6 desktop:h-44  p-3 space-y-3">
                             <div className="flex items-center gap-3">
                                 <IoTrophyOutline color='#3F7D6E' />
                                 <span className="text-[#3F7D6E] text-sm font-bold">What Drives Me</span>
                             </div>
                             <div className='flex gap-8 px-1'>
-                                <div className="h-28 border-l border-[#365E53]"></div>
+                                <div className="h-28 border-l border-[#272E2C]"></div>
                                 <div className='font-normal text-sm text-[#f3f6f5cc] space-y-2'>
                                     <p>Building intuitive user experiences</p>
                                     <p>Solving complex problems</p>
