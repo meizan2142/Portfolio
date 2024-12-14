@@ -5,7 +5,22 @@ import { FaArrowRightLong, FaHtml5, FaNodeJs } from 'react-icons/fa6';
 import { IoLogoCss3, IoLogoFirebase, IoLogoJavascript, IoLogoVercel } from 'react-icons/io5';
 import { RiReactjsLine, RiTailwindCssFill } from 'react-icons/ri';
 import { SiExpress } from 'react-icons/si';
+import { motion } from "framer-motion"
+import 'aos/dist/aos.css';
 const Skills = () => {
+    const containerVariants = {
+        hidden: { opacity: 0 },
+        show: {
+            opacity: 1,
+            transition: {
+                staggerChildren: 1
+            },
+        },
+    }
+    const gridSquareVariants = {
+        hidden: { opacity: 0 },
+        show: { opacity: 1 }
+    }
     return (
         <div id="skills" className="px-9">
             <h1 className="text-[#DCE3E1] text-2xl font-medium flex items-center gap-3">
@@ -25,15 +40,23 @@ const Skills = () => {
                     <span className='text-[#f3f6f5b3]'>Some few technologies and tools I work with to bring ideas to life</span>
                 </h1>
             </div>
-            <div className='mt-10 desktop:flex gap-6 md:grid md:grid-cols-2 space-y-0 mobile:space-y-5 laptopL:flex lg:flex desktop:mx-20 mobile:mx-0 laptopL:mx-0 md:mx-0'>
+            <motion.section
+                variants={containerVariants}
+                initial="hidden"
+                animate="show"
+                data-aos="fade-up"
+                data-aos-duration="3000"
+                className='mt-10 desktop:flex gap-6 md:grid md:grid-cols-2 space-y-0 mobile:space-y-5 laptopL:flex lg:flex desktop:mx-20 mobile:mx-0 laptopL:mx-0 md:mx-0'>
                 {/* skills div */}
                 {/* 1st div */}
-                <div className="desktop:w-[350px] rounded-2xl border mobile:p-3 border-[#272E2C] bg-[#0F1915] md:p-8">
-                <span className="rounded-full border border-[#272E2C] py-1 px-2 text-sm text-[#3F7D6E]">
-                    <span>&lt;</span>
-                    <span>/</span>
-                    <span>&gt;</span>
-                    <span> Frontend Tools</span>
+                <motion.div
+                    variants={gridSquareVariants}
+                    className="desktop:w-[350px] rounded-2xl border mobile:p-3 border-[#272E2C] bg-[#0F1915] md:p-8">
+                    <span className="rounded-full border border-[#272E2C] py-1 px-2 text-sm text-[#3F7D6E]">
+                        <span>&lt;</span>
+                        <span>/</span>
+                        <span>&gt;</span>
+                        <span> Frontend Tools</span>
                     </span>
                     <div className=' px-3 grid grid-cols-2 mobile:px-2'>
                         <div className="border border-[#272E2C] bg-[#0E1715] rounded-md w-28 lg:w-24 desktop:w-28 mobile:w-24 mt-6 h-18  p-3 space-y-3">
@@ -67,14 +90,16 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
                 {/* 2nd div */}
-                <div className="desktop:w-[350px] rounded-2xl border mobile:p-3  border-[#272E2C] bg-[#0F1915] md:p-8"> 
-                <span className="rounded-full border border-[#272E2C] py-1 px-2 text-sm text-[#3F7D6E]">
-                    <span>&lt;</span>
-                    <span>/</span>
-                    <span>&gt;</span>
-                    <span> Development Tools</span>
+                <motion.div
+                    variants={gridSquareVariants}
+                    className="desktop:w-[350px] rounded-2xl border mobile:p-3  border-[#272E2C] bg-[#0F1915] md:p-8">
+                    <span className="rounded-full border border-[#272E2C] py-1 px-2 text-sm text-[#3F7D6E]">
+                        <span>&lt;</span>
+                        <span>/</span>
+                        <span>&gt;</span>
+                        <span> Development Tools</span>
                     </span>
                     <div className=' px-3 grid grid-cols-2 mobile:p-2'>
                         <div className="border border-[#272E2C] bg-[#0E1715] rounded-md w-28 lg:w-24 desktop:w-28  mobile:w-24 mt-6 h-18  p-3 space-y-3">
@@ -96,14 +121,16 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                </div>
+                </motion.div>
                 {/* 3rd div */}
-                <div className="desktop:w-[350px] rounded-2xl border mobile:p-3  border-[#272E2C] bg-[#0F1915] md:p-8">
-                <span className="rounded-full border border-[#272E2C] py-1 px-2 text-sm text-[#3F7D6E]">
-                    <span>&lt;</span>
-                    <span>/</span>
-                    <span>&gt;</span>
-                    <span> Backend & Database</span>
+                <motion.div
+                    variants={gridSquareVariants}
+                    className="desktop:w-[350px] rounded-2xl border mobile:p-3  border-[#272E2C] bg-[#0F1915] md:p-8">
+                    <span className="rounded-full border border-[#272E2C] py-1 px-2 text-sm text-[#3F7D6E]">
+                        <span>&lt;</span>
+                        <span>/</span>
+                        <span>&gt;</span>
+                        <span> Backend & Database</span>
                     </span>
                     <div className=' px-3 grid grid-cols-2 mobile:p-2'>
                         <div className="border border-[#272E2C] bg-[#0E1715] rounded-md w-28 lg:w-24 desktop:w-28  mobile:w-24 mt-6 h-18  p-3 space-y-3">
@@ -125,8 +152,8 @@ const Skills = () => {
                             </div>
                         </div>
                     </div>
-                </div>
-            </div>
+                </motion.div>
+            </motion.section>
         </div>
     )
 }

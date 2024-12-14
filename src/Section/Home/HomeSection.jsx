@@ -1,6 +1,7 @@
 import Navbar from "../../Navbar/Navbar"
 import About from "../About/About"
 import Contact from "../Contact/Contact"
+import Footer from "../Footer/Footer"
 import Hero from "../Hero/Hero"
 import Projects from "../Projects/Projects"
 import Skills from "../Skills/Skills"
@@ -25,6 +26,10 @@ const HomeSection = () => {
             </div>
             <div className="mt-20">
                 <Contact/>
+            </div>
+            <div className="mt-20 space-y-3">
+                <hr className=" border border-[#272E2C]"/>
+                <Footer/>
             </div>
         </div>
     )

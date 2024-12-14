@@ -28,10 +28,12 @@ const Hero = () => {
                 </p>
                 <div className="mt-8 space-x-3 space-y-3">
                     <button className="border border-[#272E2C] rounded-md px-8 py-3 duration-200 hover:bg-[#3F7D6E] text-[#DCE3E1] font-medium text-sm">
-                        <p className="flex items-center gap-2">
-                            View Projects
-                            <FaArrowDownLong />
-                        </p>
+                        <a href="/#projects">
+                            <p className="flex items-center gap-2">
+                                View Projects
+                                <FaArrowDownLong />
+                            </p>
+                        </a>
                     </button>
                     <button className="border border-[#272E2C] rounded-md px-8 py-3 duration-200 hover:bg-[#365E53] text-[#DCE3E1] font-medium text-sm">
                         <a href="https://docs.google.com/document/d/1V1RPPtMOwQiu-GzEtZcm4ZFdg4VJKR7au24rSUw2T-I/edit?usp=sharing"
