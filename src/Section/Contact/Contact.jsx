@@ -28,10 +28,10 @@ const Contact = () => {
                             Have a project in mind or want to discuss opportunities? Drop me a
                             message or email me directly at
                             <a
-                                href="mailto:saifsahai2002@gmail.com"
+                                href="mailto:saifsultanmizan21@gmail.com"
                                 className="text-[#365E53] hover:text-[#3F7D6E]"
                             >
-                                <span> saifsahai2002@gmail.com</span>
+                                <span> saifsultanmizan21@gmail.com</span>
                             </a>
                         </p>
                         <div className="space-y-4">
