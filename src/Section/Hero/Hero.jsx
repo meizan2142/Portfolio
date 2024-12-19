@@ -1,3 +1,4 @@
+import { Fade, Slide } from "react-awesome-reveal"
 import { FaArrowDownLong, FaGithub, FaLinkedin } from "react-icons/fa6"
 import { MdOutlineEventNote } from "react-icons/md"
 
@@ -6,12 +7,12 @@ const Hero = () => {
         <div className="desktop:flex desktop:justify-between desktop:items-center laptopL::flex laptopL:justify-between laptopL:items-center lg:flex lg:justify-between lg:items-center mobile:grid">
             {/* left text */}
             <div id="home" className=" px-9">
-                <div className="mt-2">
+                <Slide className="mt-2">
                     <button className="border border-[#272E2C] rounded-r-full rounded-l-full px-4 text-[#365E53] font-medium py-2 text-xs">&lt; <span className="text-[#365E53]">Available for hire</span> /&gt;</button>
-                </div>
+                </Slide>
                 <div className="mt-6 space-y-3">
                     <p className="text-[#3F7D6E] font-medium text-sm">Assalamu Alaikum <span>&gt;</span><span className="text-[#365E53]"> Welcome! I&apos;m</span></p>
-                    <p className="text-[#3F7D6E] font-bold desktop:text-7xl mobile:text-4xl md:text-7xl lg:text-7xl laptopL:text-7xl">Saif Sultan Mizan</p>
+                    <Fade delay={1e3} cascade damping={1e-1} className="text-[#3F7D6E] font-bold desktop:text-7xl mobile:text-4xl md:text-7xl lg:text-7xl laptopL:text-7xl">Saif Sultan Mizan</Fade>
                     <p className="text-[#365E53] font-medium text-sm">nickname <span>&lt;</span><span className="text-[#3F7D6E]"> Saif</span></p>
                 </div>
                 <div className="border border-[#272E2C] rounded-md w-60 mt-6 h-24  p-3 space-y-3">
