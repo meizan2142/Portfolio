@@ -37,7 +37,7 @@ const Hero = () => {
                         </a>
                     </button>
                     <button className="border border-[#272E2C] rounded-md px-8 py-3 duration-200 hover:bg-[#365E53] text-[#DCE3E1] font-medium text-sm">
-                        <a href="https://drive.google.com/file/d/1OYSJzZzDf4H6n1_2L8Oj7GAsJ3HS8lOV/view?usp=drive_link"
+                        <a href="https://drive.google.com/file/d/1_MgXr8JbL6nyqKFEgl_6pWHEEUGwW45S/view?usp=drive_link"
                             target="blank"
                             className="flex items-center gap-2">
                             <MdOutlineEventNote />
