@@ -22,7 +22,17 @@ const Hero = () => {
                         <div className="h-2 w-2 rounded-full bg-green-500/50" />
                         <span className="text-[#365E53]">current_role.jsx</span>
                     </div>
-                    <h1 className="text-[#3F7D6E] font-medium text-xl w-full">MERN Stack Developer</h1>
+                    <div className="group relative inline-block cursor-pointer overflow-hidden">
+                        {/* Default visible text */}
+                        <span className="inline-block w-full text-[#3F7D6E] font-medium text-xl whitespace-nowrap transition-transform duration-500 group-hover:-translate-y-full">
+                            MERN Stack Developer
+                        </span>
+
+                        {/* Text that appears on hover */}
+                        <span className="absolute left-0 top-full w-full text-[#3F7D6E] font-medium text-xl whitespace-nowrap transition-transform duration-500 group-hover:-translate-y-full">
+                            Frontend Developer
+                        </span>
+                    </div>
                 </div>
                 <p className="text-base font-normal text-[#DCE3E1] mt-8 desktop:w-3/4 leading-relaxed">
                     Junior MERN Stack developer with a passion for crafting great user experiences. From responsive interfaces to full-stack applications, I build solutions that are both engaging and reliable. Discover my portfolio and explore my work.
