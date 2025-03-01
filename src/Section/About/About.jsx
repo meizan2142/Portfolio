@@ -17,7 +17,7 @@ const About = () => {
                 <div 
                 data-aos="fade-right"
                 className="group relative md:mx-32 desktop:mx-0 laptopL:mx-0 lg:mx-56 sm:w-[350px]">
-                    <img width={450} height={450} className=" scale-105 transform rounded-lg bg-black/70" src="https://i.ibb.co.com/Lg6N9Q2/Whats-App-Image-2024-11-27-at-19-43-39-408c1258.jpg" alt="card navigate ui" />
+                    <img width={450} height={450} className=" scale-105 transform rounded-lg bg-black/70" src="https://i.ibb.co.com/QFQNL70J/Whats-App-Image-2024-12-15-at-17-19-01-f2263a6f.jpg" alt="card navigate ui" />
                 </div>
                 <div 
                 data-aos="fade-left"
