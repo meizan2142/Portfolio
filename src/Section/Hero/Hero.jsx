@@ -73,14 +73,10 @@ const Hero = () => {
             </div>
             {/* side text */}
             <div className="px-8 md:flex md:gap-5 desktop:grid">
-                <div className="flex gap-3 border border-[#272E2C] rounded-md items-center w-60 mt-6 h-20 px-8">
-                    <p className="text-base font-medium text-[#3F7D6E]"><span>&lt;</span><span>/</span><span>&gt;</span></p>
-                    <h1 className="text-[#3F7D6E] font-medium text-base">Junior MERN Stack Developer</h1>
-                </div>
                 {/* border border-[#272E2C] rounded-md */}
                 <div className="flex gap-3 border border-[#272E2C] rounded-md items-center w-60 mt-6 h-20 px-8">
                     <p className="text-base font-medium text-[#3F7D6E]"><span>&lt;</span><span>/</span><span>&gt;</span></p>
-                    <h1 className="text-[#3F7D6E] font-medium text-base">Junior Frontend Developer</h1>
+                    <h1 className="text-[#3F7D6E] font-medium text-base">Junior MERN Stack Developer</h1>
                 </div>
             </div>
         </div>

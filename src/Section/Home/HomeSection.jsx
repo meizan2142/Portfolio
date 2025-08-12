@@ -13,23 +13,23 @@ const HomeSection = () => {
                 <Navbar />
             </div>
             <div>
-                <Hero/>
+                <Hero />
             </div>
             <div className="mt-20">
-                <About/>
+                <About />
             </div>
             <div className="mt-20">
-                <Skills/>
+                <Skills />
             </div>
             <div className="mt-20">
-                <Projects/>
+                <Projects />
             </div>
             <div className="mt-20">
-                <Contact/>
+                <Contact />
             </div>
             <div className="mt-20 space-y-3">
-                <hr className=" border border-[#272E2C]"/>
-                <Footer/>
+                <hr className=" border border-[#272E2C]" />
+                <Footer />
             </div>
         </div>
     )
