@@ -9,7 +9,7 @@ const projectsDiv = [
         id: '1',
         title: 'Taskmanagement Application',
         description: 'Full-Stack task management app where users can add tasks, task creators can manage tasks, and admins can update user roles.',
-        img: 'https://i.ibb.co.com/RTVXXfp/supremacy.png',
+        img: 'https://ik.imagekit.io/Gamerskit/mask%20images/supremacy.png?updatedAt=1756674302498',
         tool1: 'HTML',
         tool2: 'Tailwind CSS',
         tool3: 'MongoDB',
@@ -25,7 +25,7 @@ const projectsDiv = [
         id: '2',
         title: 'Find Job',
         description: 'A platform where users can search and find jobs tailored to their skills and preferences.',
-        img: 'https://i.ibb.co.com/k0j4gzQ/jobhub.png',
+        img: 'https://ik.imagekit.io/Gamerskit/mask%20images/jobhub.png?updatedAt=1756674493635',
         tool1: 'HTML',
         tool2: 'Tailwind CSS',
         tool3: 'MongoDB',
@@ -75,11 +75,11 @@ const Projects = () => {
                         key={d.id}
                         className="bg-[#0F1915] border border-[#272E2C] text-white p-6 rounded-lg shadow-lg max-w-md w-full mx-auto sm:max-w-sm md:max-w-lg lg:max-w-xl xl:max-w-2xl"
                     >
-                        <div className="relative">
+                        <div className="relative h-64 overflow-hidden rounded-lg">
                             <img
                                 src={d.img}
-                                alt=""
-                                className="rounded-lg w-full h-auto object-cover"
+                                alt={d.title}
+                                className="w-full object-cover transform translate-y-0 transition-transform duration-[6000ms] ease-linear hover:translate-y-[-60%]"
                             />
                         </div>
 
@@ -116,6 +116,7 @@ const Projects = () => {
                             </a>
                         </div>
                     </div>
+
                 ))}
             </div>
         </div>
