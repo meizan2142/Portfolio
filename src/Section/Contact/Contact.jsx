@@ -52,7 +52,7 @@ const Contact = () => {
                             </div>
                             <div className="border border-[#272E2C] rounded-md">
                                 <a
-                                    href="https://github.com/meizan2142"
+                                    href="https://www.linkedin.com/in/saif-mizan"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center px-4 py-2 rounded hover:bg-[#0F1915] transition duration-200"
