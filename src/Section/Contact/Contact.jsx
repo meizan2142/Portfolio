@@ -1,5 +1,6 @@
 import RoundaboutRightRoundedIcon from '@mui/icons-material/RoundaboutRightRounded';
-import { FaGithub, FaLinkedin } from 'react-icons/fa6';
+import { BiLogoGmail } from 'react-icons/bi';
+import { FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa6';
 const Contact = () => {
     return (
         <div id='contact'
@@ -25,14 +26,13 @@ const Contact = () => {
                             Let&apos;s Connect
                         </h2>
                         <p className="mb-4 text-[#f3f6f5b3]">
-                            Have a project in mind or want to discuss opportunities? Drop me a
-                            message or email me directly at
-                            <a
+                            Interested in working together or discussing opportunities? You can email me or reach out through any of the platforms below.
+                            {/* <a
                                 href="mailto:saifsultanmizan21@gmail.com"
                                 className="text-[#365E53] hover:text-[#3F7D6E]"
                             >
                                 <span> saifsultanmizan21@gmail.com</span>
-                            </a>
+                            </a> */}
                         </p>
                         <div className="space-y-4">
                             <div className="border border-[#272E2C] rounded-md">
@@ -43,9 +43,24 @@ const Contact = () => {
                                     className="flex items-center px-4 py-2 rounded hover:bg-[#0F1915] transition duration-200"
                                 >
                                     <span className="flex items-center gap-3">
+                                        <BiLogoGmail size={30} color="#365E53" />
+                                        <span className="text-sm font-normal text-[#365E53]">
+                                            Drop me an Email
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div className="border border-[#272E2C] rounded-md">
+                                <a
+                                    href="https://github.com/meizan2142"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center px-4 py-2 rounded hover:bg-[#0F1915] transition duration-200"
+                                >
+                                    <span className="flex items-center gap-3">
                                         <FaGithub size={30} color="#365E53" />
                                         <span className="text-sm font-normal text-[#365E53]">
-                                            Follow on GitHub
+                                            Follow my work on GitHub
                                         </span>
                                     </span>
                                 </a>
@@ -60,7 +75,22 @@ const Contact = () => {
                                     <span className="flex items-center gap-3">
                                         <FaLinkedin size={30} color="#365E53" />
                                         <span className="text-sm font-normal text-[#365E53]">
-                                            Connect on LinkedIn
+                                            Let’s connect on LinkedIn
+                                        </span>
+                                    </span>
+                                </a>
+                            </div>
+                            <div className="border border-[#272E2C] rounded-md">
+                                <a
+                                    href="https://www.facebook.com/share/1CPpDG1AJq"
+                                    target="_blank"
+                                    rel="noopener noreferrer"
+                                    className="flex items-center px-4 py-2 rounded hover:bg-[#0F1915] transition duration-200"
+                                >
+                                    <span className="flex items-center gap-3">
+                                        <FaFacebookF size={30} color="#365E53" />
+                                        <span className="text-sm font-normal text-[#365E53]">
+                                            Join me on Facebook
                                         </span>
                                     </span>
                                 </a>
