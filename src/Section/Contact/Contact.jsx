@@ -1,7 +1,39 @@
 import RoundaboutRightRoundedIcon from '@mui/icons-material/RoundaboutRightRounded';
 import { BiLogoGmail } from 'react-icons/bi';
 import { FaFacebookF, FaGithub, FaLinkedin } from 'react-icons/fa6';
+import emailjs from '@emailjs/browser';
+import { useRef, useState } from 'react';
+import toast, { Toaster } from 'react-hot-toast';
+
 const Contact = () => {
+    const form = useRef();
+    const [isSending, setIsSending] = useState(false);
+    const sendEmail = (e) => {
+        e.preventDefault();
+        setIsSending(true)
+        emailjs
+            .sendForm(
+                import.meta.env.VITE_SERVICE_ID,
+                import.meta.env.VITE_TEMP_ID,
+                form.current,
+                { publicKey: import.meta.env.VITE_PUBLIC_KEY }
+            )
+            .then(
+                () => {
+                    toast.success('Email sent successfully!');
+                    form.current.reset();
+                    setIsSending(false);
+                },
+                (error) => {
+                    console.log('FAILED...', error.text);
+                    setIsSending(false);
+                }
+            )
+            .catch((error) => {
+                console.error("Error message: ", error);
+                setIsSending(false);
+            });
+    };
     return (
         <div id='contact'
             data-aos="fade-down"
@@ -15,6 +47,10 @@ const Contact = () => {
                 <span className='text-[#3F7D6E] text-sm'>/</span>
                 <span className="rounded-full border border-[#272E2C] py-1 px-2 text-sm text-[#3F7D6E]">connect</span>
             </h1>
+            <Toaster
+                position="bottom-left"
+                reverseOrder={false}
+            />
             <div className="text-white py-16 px-4 sm:px-6">
                 <div className="max-w-5xl mx-auto w-full grid grid-cols-1 md:grid-cols-2 gap-8">
                     {/* Left Side */}
@@ -27,17 +63,11 @@ const Contact = () => {
                         </h2>
                         <p className="mb-4 text-[#f3f6f5b3]">
                             Interested in working together or discussing opportunities? You can email me or reach out through any of the platforms below.
-                            {/* <a
-                                href="mailto:saifsultanmizan21@gmail.com"
-                                className="text-[#365E53] hover:text-[#3F7D6E]"
-                            >
-                                <span> saifsultanmizan21@gmail.com</span>
-                            </a> */}
                         </p>
                         <div className="space-y-4">
                             <div className="border border-[#272E2C] rounded-md">
                                 <a
-                                    href="https://github.com/meizan2142"
+                                    href="https://mail.google.com/mail/?view=cm&fs=1&to=saifsultanmizan21@gmail.com"
                                     target="_blank"
                                     rel="noopener noreferrer"
                                     className="flex items-center px-4 py-2 rounded hover:bg-[#0F1915] transition duration-200"
@@ -102,7 +132,7 @@ const Contact = () => {
                     <div>
                         <form
                             className="space-y-4 border border-[#272E2C] p-4 rounded-md w-full"
-                            onSubmit={(e) => e.preventDefault()}
+                            ref={form} onSubmit={sendEmail}
                         >
                             <div>
                                 <label
@@ -114,7 +144,8 @@ const Contact = () => {
                                 <input
                                     type="text"
                                     id="name"
-                                    className="w-full px-4 py-2 border text-sm font-normal text-[#365E53] border-[#272E2C] bg-[#121C1A] rounded-md outline-none"
+                                    name='user_name'
+                                    className="w-full px-4 py-2 border text-sm font-normal text-white border-[#272E2C] bg-[#121C1A] rounded-md outline-none"
                                     placeholder="Your Name"
                                 />
                             </div>
@@ -128,7 +159,8 @@ const Contact = () => {
                                 <input
                                     type="email"
                                     id="email"
-                                    className="w-full px-4 py-2 text-sm font-normal text-[#365E53] border border-[#272E2C] bg-[#121C1A] rounded-md outline-none"
+                                    name='user_email'
+                                    className="w-full px-4 py-2 text-sm font-normal text-white border border-[#272E2C] bg-[#121C1A] rounded-md outline-none"
                                     placeholder="Your Email"
                                 />
                             </div>
@@ -141,17 +173,20 @@ const Contact = () => {
                                 </label>
                                 <textarea
                                     id="message"
-                                    className="w-full text-sm font-normal text-[#365E53] px-4 py-2 border border-[#272E2C] bg-[#121C1A] rounded-md outline-none"
+                                    name='message'
+                                    className="w-full text-sm font-normal text-white px-4 py-2 border border-[#272E2C] bg-[#121C1A] rounded-md outline-none"
                                     rows="4"
                                     placeholder="What's on your mind? Have an idea or project to discuss?"
                                 ></textarea>
                             </div>
                             <button
                                 type="submit"
-                                className="bg-[#365E53] px-4 py-2 rounded-lg text-[#DCE3E1] font-medium text-sm transition duration-200 w-full hover:scale-110"
+                                className="bg-[#365E53] px-4 py-2 rounded-lg text-[#DCE3E1] font-medium text-sm transition duration-200 w-full hover:scale-110 disabled:opacity-50 disabled:cursor-not-allowed"
+                                disabled={isSending}
                             >
-                                Send Message
+                                {isSending ? "Sending..." : "Send Message"}
                             </button>
+
                         </form>
                     </div>
                 </div>
